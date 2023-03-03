@@ -1,0 +1,354 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Times New Roman", Times, serif;
+}
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+.active {
+  background-color: gray;
+}
+.dropdown .dropbtn {
+  border: none;
+  outline: none;
+  background-color: inherit;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: lavenderblush;
+  min-width: 80px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 10px 0px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: 17px;
+}
+ul a li:hover {
+  background-color: #555;
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border: 10px solid yellow;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 30px;
+  position: relative;
+  background-color: rgb(70, 59, 59);
+}
+.second-logo {
+  width: 40px;
+  height: 40px;
+  border: 3px solid red;
+  border-radius: 10%;
+  display: inline-block;
+  margin-left: 30px;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+nav ul a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+nav ul li {
+  list-style-type: none;
+  display: block;
+}
+.U-design {
+  color: black;
+  font-size: 30px;
+}
+.designN {
+  color: green;
+  font-size: 30px;
+}
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 3%;
+}
+.admin {
+  color: #555;
+  margin: 0 0 10px 10px;
+}
+
+.info {
+  margin: 5px 10px;
+  font-style: oblique;
+}
+.admin-process {
+  margin: 5px 10px;
+  font-style: oblique;
+}
+.admission {
+  text-align: center;
+  margin: 15px 0 10px;
+  color: rgb(34, 120, 34);
+}
+fieldset {
+  border: none;
+}
+label {
+  display: block;
+  margin: 10px 0;
+}
+.attest {
+  color: rgb(188, 147, 44);
+  text-align: center;
+}
+input {
+  border: 1px solid black;
+}
+input[type="submit"] {
+  display: block;
+  margin: 5px auto;
+  width: 20%;
+  border: 2px solid gray;
+  border-radius: 30px;
+  color: white;
+  background-color: grey;
+}
+.copyright-logo {
+  padding: 0 10px;
+  font-size: 8px;
+}
+.footer-link {
+  text-decoration: none;
+  color: white;
+}
+.overall-cont {
+  padding: 10px 0 10px 10px;
+  background-color: rgb(70, 59, 59);
+  color: white;
+}
+.footer-link-wrap p {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  .admin {
+    margin-top: 10px;
+  }
+  .admin-process {
+    font-size: 20px;
+  }
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    padding: 0 0 0 20px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+    border: 10px solid yellow;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+    background-color: rgb(70, 59, 59);
+  }
+  .second-logo {
+    width: 40px;
+    height: 40px;
+    border: 3px solid red;
+    border-radius: 10%;
+    display: inline-block;
+    margin-left: 30px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+  a {
+    text-decoration: none;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  .U-design {
+    color: black;
+    font-size: 30px;
+  }
+  .designN {
+    color: green;
+    font-size: 30px;
+  }
+  input {
+    width: 27%;
+    height: 20px;
+  }
+  .overall-cont {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(70, 59, 59);
+    color: white;
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copyright-logo {
+    padding: 0 10px;
+    font-size: 10px;
+  }
+  .footer-link {
+    text-decoration: none;
+    color: white;
+  }
+  input[type="submit"] {
+    font-size: 25px;
+    height: 40px;
+    padding: 5px 0;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 20px 0px 0px;
+    font-size: 25px;
+  }
+  .dropdown {
+    float: right;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    padding: 0 0 0 20px;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .logo {
+    width: 80px;
+    height: 80px;
+    border: 10px solid yellow;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+    background-color: rgb(70, 59, 59);
+  }
+  .second-logo {
+    width: 40px;
+    height: 40px;
+    border: 3px solid red;
+    border-radius: 10%;
+    display: inline-block;
+    margin-left: 30px;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+  a {
+    text-decoration: none;
+    margin-left: 40px;
+    cursor: pointer;
+  }
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+  }
+  .U-design {
+    color: black;
+    font-size: 30px;
+  }
+  .designN {
+    color: green;
+    font-size: 30px;
+  }
+  .admin {
+    margin-top: 10px;
+    font-size: 35px;
+  }
+  .info {
+    font-size: 35px;
+  }
+  .admin-process {
+    font-size: 30px;
+  }
+  .admission {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+  }
+  input {
+    width: 30%;
+    height: 30px;
+  }
+  label {
+    font-size: 30px;
+  }
+  .overall-cont {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(70, 59, 59);
+    color: white;
+  }
+  .attest {
+    font-size: 30px;
+  }
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copyright-logo {
+    padding: 0 10px;
+    font-size: 15px;
+  }
+  .footer-link {
+    text-decoration: none;
+    color: white;
+  }
+  input[type="submit"] {
+    font-size: 30px;
+    height: 55px;
+    padding: 10px 0;
+  }
+}
